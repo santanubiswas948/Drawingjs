@@ -1,12 +1,12 @@
 # Drawing-App
 It is an Awsome Drawing App.
 # Demo
-[This]( https://santanubiswas948.github.io/Color-Picker/) is a simple demo of Drawing-App.
+[This](https://santanubiswas948.github.io/Drawingjs/) is a simple demo of Drawing-App.
 # Installation
 ```sh
   1.you can download it.
   2.You can clone the project folder using git command $ git clone
-  https://github.com/santanubiswas948/Color-Picker.git
+  https://github.com/santanubiswas948/Drawingjs.git
 ```
 # Getting Started
 - Then open the index.html using any browser after downloading or cloning in any browser.
