@@ -1,5 +1,5 @@
 # Drawing-App
-It is an Awsome Drawing App.
+It is an Awsome library for Drawing using canvas javascript.
 # Demo
 [This](https://santanubiswas948.github.io/Drawingjs/) is a simple demo of Drawing-App.
 # Installation
