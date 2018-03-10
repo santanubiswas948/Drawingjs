@@ -20,7 +20,20 @@ document.onreadystatechange = () =>
 						{
 								canvas_elm.canvas.style.cursor="pointer";
 								canvas_elm.canvas.addEventListener('mousemove',draw);
+								console.log("In mouse Down (need)");
 						}
+						else
+						{
+								canvas_elm.array_pointsX=[];
+								canvas_elm.array_pointsY=[];
+								canvas_elm.canvas.removeEventListener('mousemove',draw);
+								canvas_elm.flag=0;
+								canvas_elm.prev_x=0;
+								canvas_elm.prev_y=0;
+								console.log("In mouse Up");
+								console.log("In mouse Down (Not Need)");
+						}
+						
 					});
 					canvas_elm.canvas.addEventListener('mouseup',function(){
 								canvas_elm.array_pointsX=[];
@@ -29,6 +42,7 @@ document.onreadystatechange = () =>
 								canvas_elm.flag=0;
 								canvas_elm.prev_x=0;
 								canvas_elm.prev_y=0;
+								console.log("In mouse Up");
 						});
 				},
 				clear : function()
@@ -63,7 +77,7 @@ document.onreadystatechange = () =>
 							canvas_elm.ctx.moveTo(prevX,prevY);
 							canvas_elm.ctx.lineTo(currX,currY);
 							canvas_elm.ctx.lineWidth=2.3;
-							canvas_elm.ctx.strokeStyle="5px solid #000";
+							canvas_elm.ctx.strokeStyle="#4253f4";
 							canvas_elm.ctx.stroke();
 							canvas_elm.ctx.closePath();
 							
@@ -71,6 +85,7 @@ document.onreadystatechange = () =>
 					canvas_elm.array_pointsX.push(x);
 					canvas_elm.array_pointsY.push(y);
 				}
+				console.log("In Draw..");
 			}
 
 //For getting X position-----------------
